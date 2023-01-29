@@ -45,7 +45,6 @@ var example_hexes = []string{
 	"#eee8d5",
 }
 
-// go run ./_examples/demo.go
 func main() {
 	var hexes []string
 
