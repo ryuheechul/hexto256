@@ -26,6 +26,14 @@ cat <<EOF | hexto256 /dev/stdin
 EOF
 ```
 
+Or you could use something like this script to https://gist.github.com/wilfm/6f9b78a0db3553141757 extract from an arbitrary file like this one, https://github.com/dandavison/delta/blob/master/src/colors.rs
+
+```bash
+# assuming the script is downloaded as ./grephex and so is ./colors.rs for a target file
+./grephex colors.rs | hexto256 /dev/stdin
+```
+
+
 ## Install
 
 ```bash
