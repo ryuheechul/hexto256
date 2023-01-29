@@ -67,7 +67,6 @@ func main() {
 			fmt.Println("So will print examples instead")
 			hexes = example_hexes
 		} else {
-			fmt.Print(string(dat))
 			hexes = strings.Split(string(dat), "\n")
 		}
 	} else {
