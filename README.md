@@ -31,8 +31,10 @@ Or you could use something like this script to https://gist.github.com/wilfm/6f9
 ```bash
 # assuming the script is downloaded as ./grephex and so is ./colors.rs for a target file
 ./grephex colors.rs | hexto256 /dev/stdin
-```
 
+# Same thing but with a different file, https://github.com/git/git/blob/master/contrib/diff-highlight/README
+./grephex README | hexto256 /dev/stdin
+```
 
 ## Install
 
