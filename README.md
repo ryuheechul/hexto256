@@ -5,7 +5,20 @@ Heavy lifting is done by https://github.com/gookit/color.
 
 ## Example
 
-![screenshot.png](./screenshot.png)
+![./assets/screenshots/example.png](./assets/screenshots/example.png)
+
+## Rationale
+
+The purpose is to work out corresponding 256 color from hex code - [true color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)).
+
+Unlike true color, 256 color can vary depends on your terminal/shell environment and that's exactly why this tool exist to translate and preview to see if any color is usable for specific color palette.
+(This is probably more true for 0-21 though - at least for my env - so anything over that color should be consistent)
+
+Which you can see below via https://github.com/gookit/color/blob/master/_examples/color_256.go for my two different theme.
+
+<img src="./assets/screenshots/light-theme.png" width="30%">
+<img src="./assets/screenshots/dark-theme.png" width="30%">
+
 
 ## Usages
 ```bash
