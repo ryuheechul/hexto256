@@ -7,6 +7,25 @@ Heavy lifting is done by https://github.com/gookit/color.
 
 ![screenshot.png](./screenshot.png)
 
+## Usages
+```bash
+# print example
+hexto256
+
+# print with file
+hexto256 your/hex/file # make sure to have a hex code per line
+
+# print from /dev/stdin via piping - single line
+echo '#123def' | ./hexto256 /dev/stdin
+
+# print from /dev/stdin via piping - multiple lines
+cat <<EOF | hexto256 /dev/stdin
+#000000
+#123def
+#ffffff
+EOF
+```
+
 ## Install
 
 ```bash
