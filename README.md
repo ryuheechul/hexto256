@@ -16,8 +16,7 @@ Unlike true color, 256 color can vary depends on your terminal/shell environment
 
 Which you can see below via https://github.com/gookit/color/blob/master/_examples/color_256.go for my two different theme.
 
-<img src="./assets/screenshots/light-theme.png" width="30%">
-<img src="./assets/screenshots/dark-theme.png" width="30%">
+<img src="./assets/screenshots/light-theme.png" width="50%"><img src="./assets/screenshots/dark-theme.png" width="50%">
 
 
 ## Usages
