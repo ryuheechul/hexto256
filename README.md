@@ -46,14 +46,15 @@ Or you could use something like this script to https://gist.github.com/wilfm/6f9
 ./grephex README | hexto256 /dev/stdin
 ```
 
+## Install
 
-## Build and Run on the Fly With Nix
+### Build and Run on the Fly With Nix
 ```bash
 # assuming you use flakes
 nix run github:ryuheechul/hexto256
 ```
 
-## Good Old Regular Install With Go
+### Good Old Regular Install With Go
 ```bash
 go install github.com/ryuheechul/hexto256
 ```
