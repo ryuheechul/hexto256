@@ -4,11 +4,9 @@ Read series of hex color code like `#000000` and `#ffffff` and convert these to 
 Heavy lifting is done by https://github.com/gookit/color.
 
 ## Example
-
 ![./assets/screenshots/example.png](./assets/screenshots/example.png)
 
 ## Rationale
-
 The purpose is to work out corresponding 256 color from hex code - [true color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)).
 
 Unlike true color, 256 color can vary depends on your terminal/shell environment and that's exactly why this tool exist to translate and preview to see if any color is usable for specific color palette.
@@ -48,26 +46,44 @@ Or you could use something like this script to https://gist.github.com/wilfm/6f9
 ./grephex README | hexto256 /dev/stdin
 ```
 
-## Install
 
+## Build and Run on the Fly With Nix
+```bash
+# assuming you use flakes
+nix run github:ryuheechul/hexto256
+```
+
+## Good Old Regular Install With Go
 ```bash
 go install github.com/ryuheechul/hexto256
 ```
 
-## Prerequisite
+## Development
 
-It can be configured easily via [devenv.nix](./devenv.nix) (powered by https://devenv.sh/)
+### Using Go Command
+Golang can be configured either with:
+- your own method to install - e.g. https://go.dev/doc/install
+- via [devenv.nix](./devenv.nix) (powered by https://devenv.sh/)
 
 _or just typical golang environment should be sufficient_
-
-## Development
 
 ```bash
 # try out
 go run .
 # or
-go run ./example.hex.txt
+go run . ./example.hex.txt
 
 # build
 go build
+```
+
+
+### Using Nix Command
+Or if you use [Nix Flakes](https://nixos.wiki/wiki/Flakes) (and not use devenv.nix), following options available
+```bash
+# build
+nix build
+
+# if to do other things interactively, for example with go binary like from the previous section
+nix develop
 ```
