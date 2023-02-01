@@ -8,8 +8,8 @@
   packages = [ pkgs.git pkgs.gopls ];
 
   enterShell = ''
+    unset GOROOT # until https://github.com/cachix/devenv/issues/346
     hello
-    git --version
   '';
 
   # https://devenv.sh/languages/
@@ -17,7 +17,7 @@
   devcontainer.enable = true;
 
   # https://devenv.sh/scripts/
-  # scripts.hello.exec = "echo hello from $GREET";
+  scripts.hello.exec = "echo hello from $GREET";
 
   # https://devenv.sh/pre-commit-hooks/
   # pre-commit.hooks.shellcheck.enable = true;
